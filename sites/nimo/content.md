@@ -230,6 +230,26 @@ View LinkedIn
 
 ## [GitHub projects](https://github.com/nimobenne)
 
+### [WidgetAI](https://github.com/nimobenne/widgetai)
+
+Embeddable AI site assistant: answers only from the site's own content, cites sources, hard-capped costs. Live on nimobenne.github.io.
+
+Language: TypeScript · Updated: November 2026
+
+A small AI assistant that any website can add with one script tag. It answers visitor questions using only that site's own content, links to the section it used, and declines everything else. io (chat button, bottom right) · product page
+
+All limits are reserved in Postgres before any model call, and every check fails closed. md. Without DATABASEURL it uses an in-memory store. example). Built by Nimo Benne as a portfolio project. It is added to sites on request; there is no self-service sign-up.
+
+### [VolleyMaps](https://github.com/nimobenne/volleymaps)
+
+Map of pickup volleyball in Toronto: beach, grass and indoor games, City of Toronto drop-ins, RSVPs. Next.js + Neon + MapLibre.
+
+Language: TypeScript · Updated: November 2026
+
+VolleyMaps helps people find pickup volleyball games around Toronto. Browse games on a map, check venue schedules, and RSVP. Open the live site
+
+Organizers can submit games and venues through the site. Approved listings appear on the map. City of Toronto adult drop-in volleyball schedules are synced from the city's open data catalogue. Open http://localhost:3000. Without DATABASEURL, the site uses built-in mock data. No secrets are needed to explore it locally.
+
 ### [Build-Readiness Dashboard for InvenTree](https://github.com/nimobenne/inventree-build-readiness)
 
 Build-readiness dashboard on top of InvenTree: how many kits can ship today, and which part is the bottleneck on the rest. Read-only by default.
@@ -291,17 +311,9 @@ This project is a web-based AI chatbot that answers customer service questions a
 
 These projects live in private repositories. The summaries below are the public details.
 
-### [WidgetAI site assistant](https://chat-bot-widget-two.vercel.app/)
-
-The assistant answering questions on this site. Nimo built it as a small chat widget that any website can add with one script tag. It answers only from that site's own pages and its public GitHub projects, links to the part it used, and declines everything else. Each site is locked to its own domains with signed tokens. Hard limits keep the running cost to a few cents a day: a prepaid provider budget, per-visitor and per-chat limits, daily and monthly caps, short answers and a small model. Built with Next.js, TypeScript, the OpenAI API and Postgres on Neon, hosted on Vercel. Started 2026.
-
 ### [NewsDigest](https://nimobenne.github.io/#projects)
 
 A news digest website built for a journalist who wanted to stop spending mornings hunting for stories. Twice each morning it reads Canadian and international news feeds, removes repeats, uses GPT-4o-mini to grade the stories and write short pitches for the best ones, and publishes the result as a web page. Every AI step is capped to keep costs low. Built with Python and the OpenAI API, hosted on Vercel. Built in 2026 and running daily.
-
-### [VolleyMaps](https://nimobenne.github.io/#projects)
-
-A site for finding pickup volleyball games in Toronto. It shows games on a map and in a live list, with filters for the things players care about. Organizers opt in to be listed. Built with Next.js, TypeScript, Postgres and MapLibre maps, hosted on Vercel. Live at volleymaps.vercel.app.
 
 ### [autoclipper](https://nimobenne.github.io/#projects)
 
