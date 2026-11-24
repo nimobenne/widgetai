@@ -40,7 +40,7 @@ export default function HomePage() {
         <article id="stack"><p className="eyebrow">Under the hood</p><h2>Small, explicit pieces.</h2><p>Next.js and TypeScript serve the app. OpenAI generates answers, site content lives in this project, and Neon Postgres stores usage counters and a 30-day question log. A Shadow DOM embed keeps widget styles contained, while signed tokens and a per-domain allowlist control requests.</p></article>
       </section>
 
-      <footer className="page-footer"><p>A portfolio project by <a href="https://nimobenne.github.io" target="_blank" rel="noreferrer">Nimo Benne</a>.</p><a href="/privacy">Privacy</a></footer>
+      <footer className="page-footer"><p>A portfolio project by <a href="https://nimobenne.github.io" target="_blank" rel="noreferrer">Nimo Benne</a>.</p><span className="footer-links"><a href="https://github.com/nimobenne/widgetai" target="_blank" rel="noreferrer">Source on GitHub</a> · <a href="/privacy">Privacy</a></span></footer>
     </main>
   );
 }
