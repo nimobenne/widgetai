@@ -1,0 +1,15 @@
+{
+  "siteId": "nimo",
+  "name": "Nimo Benne",
+  "allowedDomains": ["nimobenne.github.io", "localhost"],
+  "greeting": "Hi! Ask me about Nimo's work, projects, or background.",
+  "starters": ["What does Nimo work on?", "What projects has Nimo built?", "What is Nimo's technical background?"],
+  "sourceUrls": ["https://nimobenne.github.io/"],
+  "contactUrl": "https://nimobenne.github.io/#contact",
+  "github": {
+    "user": "nimobenne",
+    "exclude": ["nimobenne", "nimobenne.github.io", "claudeSync", "swipefy"],
+    "monorepos": ["portfolio"]
+  },
+  "extraFiles": ["private-projects.md"]
+}

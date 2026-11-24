@@ -1,0 +1,9 @@
+{
+  "siteId": "widgetai",
+  "name": "WidgetAI",
+  "allowedDomains": ["chat-bot-widget-two.vercel.app", "localhost"],
+  "greeting": "Hi! Ask me how WidgetAI works, what it costs to run, or how it is built.",
+  "starters": ["What is WidgetAI?", "How is it built?", "How are AI costs capped?"],
+  "sourceUrls": ["https://chat-bot-widget-two.vercel.app/"],
+  "contactUrl": "https://nimobenne.github.io/#contact"
+}

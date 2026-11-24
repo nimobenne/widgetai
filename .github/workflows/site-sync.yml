@@ -1,0 +1,34 @@
+name: Sync site snapshot
+
+on:
+  schedule:
+    - cron: '0 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync-nimo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run site:sync -- nimo
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit and push snapshot
+        run: |
+          if ! git diff --quiet -- sites/; then
+            git config user.name "nimobenne"
+            git config user.email "nimobenne@users.noreply.github.com"
+            git add sites/
+            git commit -m "Sync nimo site snapshot"
+            git push origin main
+          fi
