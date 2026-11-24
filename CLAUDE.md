@@ -15,4 +15,4 @@ Next.js App Router + TypeScript on Vercel Hobby (project `chat-bot-widget`, host
 - Store no IPs (salted hash only), no session ids in the question log, nothing personal. Never log prompts, tokens or upstream bodies.
 - No phone numbers or private contact details anywhere in the app or site snapshots.
 - Widget stays dependency-free, Shadow DOM, no innerHTML of untrusted text. Keep the server contract stable: `GET /api/widget/config`, `POST /api/widget/token/refresh`, `POST /api/chat`.
-- Work is tracked as GitHub issues on `nimobenne/chatBotWidget`; fix commits say `Fixes #N`.
+- Public repo `nimobenne/widgetai` (fresh history; old private history archived as `nimobenne/chatBotWidget`). Work is tracked as GitHub issues there; fix commits say `Fixes #N`. Never commit secrets or personal data: the repo is public.
